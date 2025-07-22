@@ -1,6 +1,6 @@
 ## KUBU-HAI.MODEL.Y5
 
-[![Release](https://img.shields.io/github/v/release/actions/deploy-pages?label=Release&logo=github)](https://github.com/actions/deploy-pages/releases/latest) [![Linting](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-linter.yml?label=Linting&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-linter.yml) [![Formatting](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-formatting.yml?label=Formatting&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-formatting.yml) [![Tests](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/test.yml?label=Tests&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/test.yml) ![Coverage](./coverage_badge.svg) [![Distributables](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-dist.yml?label=Distributables&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-dist.yml) [![CodeQL](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/codeql-analysis.yml?label=CodeQL&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/codeql-analysis.yml)
+![Release]() [![Linting](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-linter.yml?label=Linting&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-linter.yml) [![Formatting](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-formatting.yml?label=Formatting&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-formatting.yml) [![Tests](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/test.yml?label=Tests&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/test.yml) ![Coverage](./coverage_badge.svg) [![Distributables](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/check-dist.yml?label=Distributables&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/check-dist.yml) [![CodeQL](https://img.shields.io/github/actions/workflow/status/actions/deploy-pages/codeql-analysis.yml?label=CodeQL&logo=github)](https://github.com/actions/deploy-pages/actions/workflows/codeql-analysis.yml)
 [![Release](https://github.com/actions/deploy-pages/actions/workflows/release.yml/badge.svg)](https://github.com/actions/deploy-pages/actions/workflows/release.yml)
 
 
@@ -46,7 +46,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+        uses: actions/deploy-pages@v4 # or specific "v6.0.1" version tag for this action
 ```
 
 ### Inputs 📥
@@ -94,8 +94,8 @@ This action is primarily designed for use with GitHub.com's Actions workflows an
 
 | Release | GHES Compatibility |
 |:---|:---|
-| [`v4`](https://github.com/actions/deploy-pages/releases/tag/v4) | :warning: Incompatible at this time |
-| [`v3`](https://github.com/actions/deploy-pages/releases/tag/v3) | `>= 3.9` |
+| [`v4`](https://github.com/actions/deploy-pages/releases/tag/v6.0.1) | :warning: Incompatible at this time |
+| [`v3`](https://github.com/actions/deploy-pages/releases/tag/v4.0.5) | `>= 3.9` |
 | `v3.x.x` | `>= 3.9` |
 | [`v2`](https://github.com/actions/deploy-pages/releases/tag/v2) | `>= 3.9` |
 | `v2.x.x` | `>= 3.9` |
