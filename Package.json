@@ -1,6 +1,6 @@
 {
   "name": "kubu-hai",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Deploy an actions artifact to GitHub Pages (TypeScript)",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
