@@ -7,12 +7,13 @@
   "scripts": {
     "all": "npm run format && npm run lint && npm run build && npm run test && npm run coverage-badge",
     "build": "tsc && ncc build dist/index.js -o dist --source-map --license licenses.txt",
-    "coverage-badge": "make-coverage-badge --output-path ./coverage_badge.svg",
+    "prepare": "ncc build src/index.ts -o dist --source-map",
+    "test": "jest",
+    "lint": "eslint --ext .ts src",
+    "lint:check": "eslint . --ext .ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint --ext .ts src",
-    "lint:check": "eslint --ext .ts src",
-    "test": "jest"
+    "coverage-badge": "make-coverage-badge --output-path ./coverage_badge.svg"
   },
   "dependencies": {
     "@actions/artifact": "^2.1.11",
@@ -39,15 +40,9 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "coverageReporters": [
-      "json-summary",
-      "text",
-      "lcov"
-    ],
+    "coverageReporters": ["json-summary", "text", "lcov"],
     "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.ts"
-    ],
+    "collectCoverageFrom": ["src/**/*.ts"],
     "coverageThreshold": {
       "global": {
         "lines": 70,
@@ -59,12 +54,7 @@
     "type": "git",
     "url": "git+https://github.com/actions/deploy-pages.git"
   },
-  "keywords": [
-    "GitHub",
-    "Pages",
-    "TypeScript",
-    "Actions"
-  ],
+  "keywords": ["GitHub", "Pages", "TypeScript", "Actions"],
   "author": "kubulee",
   "license": "MIT",
   "bugs": {
