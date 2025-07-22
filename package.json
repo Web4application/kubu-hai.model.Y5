@@ -1,5 +1,5 @@
 {
-  "name": "deploy-pages",
+  "name": "kubu-hai",
   "version": "0.0.0",
   "description": "Deploy an actions artifact to GitHub Pages",
   "main": "./dist/index.js",
@@ -39,7 +39,7 @@
     "GitHub",
     "Pages"
   ],
-  "author": "GitHub",
+  "author": "kubulee",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/actions/deploy-pages/issues"
